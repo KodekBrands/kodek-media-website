@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="forms.css" />
   <link rel="icon" type="image/png" href="logo-icon.png" />
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
 
@@ -62,6 +63,12 @@
     <div class="form-card">
 
       <form id="creatorForm" novalidate>
+
+        <!-- Honeypot — hidden from humans, catches bots -->
+        <div class="form-hp" aria-hidden="true">
+          <label for="company_url">Leave this blank</label>
+          <input type="text" id="company_url" name="company_url" tabindex="-1" autocomplete="off" />
+        </div>
 
         <!-- ─── Contact Info ──────────────────────── -->
         <div class="form-section-title">Personal Information</div>
@@ -240,6 +247,10 @@
         <div class="form-group">
           <label class="form-label" for="sampleLive">Link to a Recent LIVE or Video</label>
           <input class="form-input" type="url" id="sampleLive" name="sampleLive" placeholder="https://www.tiktok.com/..." />
+        </div>
+
+        <div class="turnstile-wrap">
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAAC9mZPhq9n-aTmN4" data-theme="dark"></div>
         </div>
 
         <button type="submit" class="form-submit" id="submitBtn">

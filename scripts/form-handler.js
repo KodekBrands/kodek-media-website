@@ -104,9 +104,33 @@
     }, 420);
   }
 
+  /* ── Spam checks ──────────────────────────────────────── */
+  const honeypot = form.querySelector('input[name="company_url"]');
+
+  function isHoneypotFilled() {
+    return honeypot && honeypot.value.trim() !== '';
+  }
+
+  function getTurnstileToken() {
+    const input = form.querySelector('[name="cf-turnstile-response"]');
+    return input ? input.value : '';
+  }
+
   /* ── Submit handler ─────────────────────────────────── */
   form.addEventListener('submit', (e) => {
     e.preventDefault();
+
+    // Honeypot check — silently show success to fool bots
+    if (isHoneypotFilled()) {
+      showSuccess();
+      return;
+    }
+
+    // Turnstile check
+    if (!getTurnstileToken()) {
+      alert('Please complete the security check before submitting.');
+      return;
+    }
 
     let allValid = true;
 
@@ -144,6 +168,9 @@
     submitBtn.disabled = true;
 
     const payload = collectFormData();
+    // Remove honeypot & Turnstile fields from the payload sent to Sheets
+    delete payload['company_url'];
+    delete payload['cf-turnstile-response'];
 
     fetch(endpoint, {
       method: 'POST',

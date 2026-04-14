@@ -501,6 +501,26 @@
 
 .form-footer-link:hover { color: var(--white); }
 
+/* ── Honeypot (spam trap — hidden from humans) ─────────── */
+.form-hp {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  pointer-events: none;
+  tab-index: -1;
+}
+
+/* ── Turnstile widget ──────────────────────────────────── */
+.turnstile-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 8px;
+}
+
 /* ── Responsive ─────────────────────────────────────────── */
 @media (max-width: 640px) {
   .form-card {
