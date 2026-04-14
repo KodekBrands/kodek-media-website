@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=820" />
+  <title>Kodek Media — Facebook Cover</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      width: 820px;
+      height: 312px;
+      overflow: hidden;
+      background: #000;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .cover {
+      position: relative;
+      width: 820px;
+      height: 312px;
+      background: #000;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ── Ambient glow orbs ── */
+    .glow-1 {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: none;
+      pointer-events: none;
+    }
+    .glow-2 {
+      position: absolute;
+      background: none;
+      pointer-events: none;
+    }
+    .glow-3 {
+      position: absolute;
+      background: none;
+      pointer-events: none;
+    }
+
+    /* ── Subtle grid ── */
+    .grid {
+      position: absolute;
+      inset: 0;
+      background: none;
+      pointer-events: none;
+    }
+
+    /* ── Content ── */
+    .content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      padding: 0 60px;
+    }
+
+    .label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 14px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 6px 14px;
+    }
+
+    .label-dot {
+      width: 7px;
+      height: 7px;
+      background: #ff8f00;
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; box-shadow: 0 0 4px rgba(255,143,0,0.6); }
+      50% { opacity: 0.6; box-shadow: 0 0 8px rgba(255,143,0,0.3); }
+    }
+
+    .title {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 1.0;
+      letter-spacing: -0.01em;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .title .gradient {
+      background: linear-gradient(130deg, #ff8f00 0%, #ffd54f 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.5;
+    }
+
+    .tags {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.5);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 6px;
+      padding: 5px 12px;
+      letter-spacing: 0.02em;
+    }
+
+    .tag-icon {
+      font-size: 13px;
+    }
+
+    /* ── Background watermark logo ── */
+    .bg-logo {
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.09;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .bg-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* ── Decorative line accents ── */
+    .accent-line {
+      position: absolute;
+      width: 120px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,143,0,0.3), transparent);
+      z-index: 1;
+    }
+    .accent-line-1 {
+      top: 40px;
+      right: 80px;
+    }
+    .accent-line-2 {
+      bottom: 50px;
+      left: 100px;
+      width: 80px;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <!-- Ambient effects -->
+    <div class="glow-1"></div>
+    <div class="glow-2"></div>
+    <div class="glow-3"></div>
+    <div class="grid"></div>
+    <div class="bg-logo"><img src="logo-icon.png" alt="" /></div>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="label">
+        <span class="label-dot"></span>
+        TikTok's Premier Brand Empowerment Agency
+      </div>
+      <div class="title">
+        AMPLIFY <span class="gradient">YOUR BRAND</span>
+      </div>
+      <p class="subtitle">From content to commerce — we turn TikTok into your most powerful sales channel.</p>
+      <div class="tags">
+        <span class="tag"><span class="tag-icon">🏪</span> Brands &amp; Sellers</span>
+        <span class="tag"><span class="tag-icon">🎥</span> LIVE Creators</span>
+        <span class="tag"><span class="tag-icon">💰</span> Shop Affiliates</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

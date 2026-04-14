@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand & Seller Inquiry — Kodek Media</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="forms.css" />
+  <link rel="icon" type="image/png" href="logo-icon.png" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="logo-wordmark.png" alt="Kodek Media" class="logo-img logo-wordmark" />
+        <img src="logo-icon.png"     alt="Kodek Media" class="logo-img logo-icon-only" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="apply-brand.html" class="btn btn-primary nav-cta">Apply Now</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="form-hero">
+    <div class="form-hero-glow"></div>
+    <div class="form-hero-grid"></div>
+    <div class="form-hero-inner">
+      <a href="index.html" class="form-back">← Back to Home</a>
+      <span class="section-label">Brand &amp; Seller Inquiry</span>
+      <h1 class="form-title">Scale Your Brand<br /><span class="text-gradient">on TikTok</span></h1>
+      <p class="form-subtitle">Tell us about your brand and goals. Our team will review your application and reach out within 24 hours.</p>
+      <div class="form-meta">
+        <div class="form-meta-item"><span class="form-meta-dot"></span> Free strategy session</div>
+        <div class="form-meta-item"><span class="form-meta-dot"></span> Response within 24 hrs</div>
+        <div class="form-meta-item"><span class="form-meta-dot"></span> No commitment required</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section class="form-section">
+    <div class="form-card">
+
+      <!-- ─── The actual form ─────────────────────── -->
+      <form id="brandForm" novalidate>
+
+        <div class="form-section-title">Contact Information</div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="firstName">First Name <span class="required">*</span></label>
+            <input class="form-input" type="text" id="firstName" name="firstName" placeholder="Jane" required />
+            <span class="form-error-msg">Please enter your first name.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="lastName">Last Name <span class="required">*</span></label>
+            <input class="form-input" type="text" id="lastName" name="lastName" placeholder="Smith" required />
+            <span class="form-error-msg">Please enter your last name.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address <span class="required">*</span></label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="jane@yourbrand.com" required />
+            <span class="form-error-msg">Please enter a valid email.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone Number <span class="required">*</span></label>
+            <input class="form-input" type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" required />
+            <span class="form-error-msg">Please enter your phone number.</span>
+          </div>
+        </div>
+
+        <div class="form-section-title">Brand Details</div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="brandName">Brand / Company Name <span class="required">*</span></label>
+            <input class="form-input" type="text" id="brandName" name="brandName" placeholder="Your Brand Inc." required />
+            <span class="form-error-msg">Please enter your brand name.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="website">Brand Website</label>
+            <input class="form-input" type="url" id="website" name="website" placeholder="https://yourbrand.com" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="tiktokShop">TikTok Shop URL (if existing)</label>
+            <input class="form-input" type="url" id="tiktokShop" name="tiktokShop" placeholder="https://www.tiktok.com/..." />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="tiktokHandle">TikTok Handle</label>
+            <input class="form-input" type="text" id="tiktokHandle" name="tiktokHandle" placeholder="@yourbrand" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="category">Product Category <span class="required">*</span></label>
+            <div class="form-select-wrap">
+              <select class="form-select" id="category" name="category" required>
+                <option value="" disabled selected>Select a category…</option>
+                <option>Beauty &amp; Skincare</option>
+                <option>Fashion &amp; Apparel</option>
+                <option>Health &amp; Wellness</option>
+                <option>Food &amp; Beverage</option>
+                <option>Electronics &amp; Tech</option>
+                <option>Home &amp; Living</option>
+                <option>Fitness &amp; Sports</option>
+                <option>Baby &amp; Kids</option>
+                <option>Pets</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <span class="form-error-msg">Please select a product category.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="revenue">Monthly Revenue <span class="required">*</span></label>
+            <div class="form-select-wrap">
+              <select class="form-select" id="revenue" name="revenue" required>
+                <option value="" disabled selected>Select range…</option>
+                <option>Under $10,000</option>
+                <option>$10,000 – $50,000</option>
+                <option>$50,000 – $100,000</option>
+                <option>$100,000 – $500,000</option>
+                <option>$500,000 – $1M</option>
+                <option>$1M+</option>
+              </select>
+            </div>
+            <span class="form-error-msg">Please select your revenue range.</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="tiktokPresence">Current TikTok Presence</label>
+          <div class="form-select-wrap">
+            <select class="form-select" id="tiktokPresence" name="tiktokPresence">
+              <option value="" disabled selected>Select…</option>
+              <option>No TikTok presence yet</option>
+              <option>Under 10K followers</option>
+              <option>10K – 100K followers</option>
+              <option>100K – 500K followers</option>
+              <option>500K+ followers</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-section-title">Services &amp; Goals</div>
+
+        <div class="form-group">
+          <label class="form-label">Services You're Interested In</label>
+          <div class="form-check-group">
+            <label class="form-check-label"><input type="checkbox" name="services" value="Creator Management" /> Creator Management</label>
+            <label class="form-check-label"><input type="checkbox" name="services" value="TikTok Shop Setup" /> TikTok Shop Setup</label>
+            <label class="form-check-label"><input type="checkbox" name="services" value="Content Strategy" /> Content Strategy</label>
+            <label class="form-check-label"><input type="checkbox" name="services" value="Live Commerce" /> Live Commerce</label>
+            <label class="form-check-label"><input type="checkbox" name="services" value="Paid Amplification" /> Paid Amplification</label>
+            <label class="form-check-label"><input type="checkbox" name="services" value="Analytics & Reporting" /> Analytics &amp; Reporting</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="goals">Tell Us About Your Brand &amp; Goals <span class="required">*</span></label>
+          <textarea class="form-textarea" id="goals" name="goals" placeholder="Share a bit about your brand, your current challenges on TikTok, and what success looks like for you…" required></textarea>
+          <span class="form-error-msg">Please share your brand goals.</span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="heardFrom">How Did You Hear About Kodek Media?</label>
+          <div class="form-select-wrap">
+            <select class="form-select" id="heardFrom" name="heardFrom">
+              <option value="" disabled selected>Select…</option>
+              <option>TikTok</option>
+              <option>Instagram</option>
+              <option>Google Search</option>
+              <option>Referral from a friend</option>
+              <option>Referral from a client</option>
+              <option>LinkedIn</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="form-submit" id="submitBtn">
+          Submit Brand Inquiry →
+        </button>
+        <p class="form-note">By submitting you agree to our Privacy Policy. We never share your data.</p>
+
+      </form>
+
+      <!-- ─── Success screen ─────────────────────── -->
+      <div class="form-success" id="formSuccess">
+        <div class="success-icon">✓</div>
+        <h3 class="success-title">Application Received!</h3>
+        <p class="success-desc">Thank you for reaching out. A member of our team will review your inquiry and contact you within 24 hours to schedule your free strategy session.</p>
+        <a href="index.html" class="btn btn-primary btn-large">Back to Home</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SLIM FOOTER -->
+  <footer class="form-footer">
+    <img src="logo-wordmark.png" alt="Kodek Media" class="form-footer-logo" />
+    <span class="form-footer-copy">© 2025 Kodek Media. All rights reserved.</span>
+    <a href="index.html" class="form-footer-link">Privacy Policy</a>
+  </footer>
+
+  <script src="scripts/form-handler.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

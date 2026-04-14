@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:global.borgrise.com)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=false --import-alias=\"@/*\" --yes)",
+      "Bash(/opt/homebrew/bin/brew list)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\")",
+      "Bash(node:*)",
+      "Bash(/opt/homebrew/bin/brew install:*)",
+      "Bash(export PATH=\"/opt/homebrew/bin:$PATH\")",
+      "Bash(npx:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "WebFetch(domain:zb2j6l114vv.sg.larksuite.com)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(open:*)"
+    ]
+  }
+}

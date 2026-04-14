@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — Kodek Media</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="logo-icon.png" />
+  <style>
+    /* ── Legal page layout ── */
+    .legal-hero {
+      padding: calc(var(--nav-h) + 72px) 0 64px;
+      border-bottom: 1px solid var(--glass-border);
+    }
+    .legal-hero .legal-label {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 18px;
+    }
+    .legal-hero h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 700;
+      color: var(--white);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .legal-meta {
+      font-size: 0.85rem;
+      color: var(--gray-light);
+    }
+    .legal-meta span {
+      color: var(--amber);
+      font-weight: 500;
+    }
+
+    /* ── Body content ── */
+    .legal-body {
+      padding: 80px 0 120px;
+    }
+    .legal-body .legal-inner {
+      max-width: 760px;
+    }
+    .legal-section {
+      margin-bottom: 56px;
+    }
+    .legal-section h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--white);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--glass-border);
+    }
+    .legal-section h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--white);
+      margin: 24px 0 8px;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+    .legal-section p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .legal-section ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 14px;
+    }
+    .legal-section ul li {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.75;
+      padding-left: 18px;
+      position: relative;
+      margin-bottom: 6px;
+    }
+    .legal-section ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--amber);
+      font-weight: 700;
+    }
+    .legal-section a {
+      color: var(--amber);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,143,0,0.3);
+      transition: border-color 0.2s;
+    }
+    .legal-section a:hover {
+      border-color: var(--amber);
+    }
+    .legal-callout {
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-left: 3px solid var(--amber);
+      border-radius: 8px;
+      padding: 18px 22px;
+      margin: 20px 0;
+    }
+    .legal-callout p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="logo-wordmark.png" alt="Kodek Media" class="logo-img logo-wordmark" />
+        <img src="logo-icon.png"     alt="Kodek Media" class="logo-img logo-icon-only" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="apply-brand.html" class="btn btn-primary nav-cta">Get Started</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════ MOBILE MENU ═══════════════════════ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="apply-brand.html" class="btn btn-primary" style="display:inline-flex;margin-top:8px">Get Started</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <div class="legal-hero">
+    <div class="container">
+      <span class="legal-label">Legal</span>
+      <h1>Terms of Service</h1>
+      <p class="legal-meta">Last updated: <span>February 2025</span></p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ CONTENT ═══════════════════════ -->
+  <div class="legal-body">
+    <div class="container">
+      <div class="legal-inner">
+
+        <div class="legal-section">
+          <h2>Agreement to Terms</h2>
+          <p>These Terms of Service ("Terms") govern your use of the Kodek Media website located at kodekmedia.com ("Website") and any services offered by Kodek Media ("we," "us," or "our"). By accessing or using our Website, submitting an application, or engaging our services, you agree to be bound by these Terms.</p>
+          <p>If you do not agree with any part of these Terms, please do not use our Website or submit your information.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>About Kodek Media</h2>
+          <p>Kodek Media is a TikTok brand empowerment agency. We work with brands, LIVE creators, and TikTok Shop affiliates to help them grow on the TikTok platform. Our services include creator management, TikTok Shop setup, content strategy, live commerce, analytics, and paid amplification.</p>
+          <p>Kodek Media operates independently and is not affiliated with, endorsed by, or an official partner of TikTok or its parent company ByteDance. TikTok is a registered trademark of ByteDance Ltd.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Use of the Website</h2>
+          <p>By using our Website, you agree that you will:</p>
+          <ul>
+            <li>Use the Website only for lawful purposes and in accordance with these Terms</li>
+            <li>Provide accurate, truthful, and complete information when submitting any application or inquiry</li>
+            <li>Not attempt to gain unauthorized access to any part of the Website</li>
+            <li>Not use automated tools to scrape, copy, or reproduce Website content</li>
+            <li>Not engage in any activity that disrupts or interferes with the Website's normal operation</li>
+          </ul>
+          <p>We reserve the right to refuse service to, or remove access for, anyone who violates these Terms or whose conduct we deem harmful to our business or other users.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Application Submissions</h2>
+          <p>Submitting an application through our Brand & Seller Inquiry, LIVE Creator Program, or TikTok Shop Affiliate forms does not constitute a guarantee of acceptance into any Kodek Media program or service.</p>
+          <ul>
+            <li>All applications are reviewed at our sole discretion</li>
+            <li>We may accept, decline, or request additional information for any submission</li>
+            <li>Submitting an application does not create a contractual obligation on either party</li>
+            <li>You are responsible for the accuracy of all information you provide</li>
+          </ul>
+          <p>If accepted into a program, a separate service agreement will be provided and must be agreed to before services begin.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Intellectual Property</h2>
+          <p>All content on this Website — including text, graphics, logos, icons, images, and the Kodek Media name and branding — is the property of Kodek Media and is protected by applicable copyright and trademark laws.</p>
+          <p>You may not reproduce, distribute, modify, create derivative works from, publicly display, or use any Website content for commercial purposes without our prior written consent.</p>
+          <p>When you submit application materials, creative assets, or other content to us, you grant Kodek Media a limited, non-exclusive license to use that content solely for the purpose of evaluating and fulfilling your application or service request.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Third-Party Platforms</h2>
+          <p>Our services involve TikTok and TikTok Shop, which are third-party platforms with their own terms of service, community guidelines, and policies. You are responsible for ensuring your own compliance with TikTok's platform rules at all times.</p>
+          <p>Kodek Media is not liable for any account actions taken by TikTok, including but not limited to restrictions, suspensions, or bans — whether or not those actions occur during the period in which we are providing services to you.</p>
+          <div class="legal-callout">
+            <p>Our LIVE Creator protection services are designed to support creators in navigating platform challenges, but cannot guarantee outcomes. TikTok's platform decisions are outside our control.</p>
+          </div>
+        </div>
+
+        <div class="legal-section">
+          <h2>No Guarantees of Results</h2>
+          <p>While we strive to deliver meaningful results for every client, Kodek Media makes no specific guarantees regarding sales performance, revenue, follower growth, content virality, or any other measurable outcome.</p>
+          <p>TikTok is a dynamic platform subject to algorithm changes, market shifts, and external factors beyond our control. All projections or estimates we share are based on our experience and are not binding commitments.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Disclaimer of Warranties</h2>
+          <p>The Kodek Media Website and its content are provided on an "as is" and "as available" basis without any warranties of any kind, express or implied. We do not warrant that the Website will be error-free, uninterrupted, or free from viruses or other harmful components.</p>
+          <p>To the fullest extent permitted by applicable law, we disclaim all warranties, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Limitation of Liability</h2>
+          <p>To the maximum extent permitted by law, Kodek Media and its owners, employees, and contractors shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of this Website or our services — including lost profits, lost data, or business interruption.</p>
+          <p>Our total liability to you for any claim arising from your use of this Website or our services shall not exceed the amount you have paid to us in the 30 days preceding the claim.</p>
+        </div>
+
+        <div class="legal-section" id="cookies">
+          <h2>Cookie Policy</h2>
+          <p>Our Website may use cookies and similar technologies to improve the browsing experience and analyze Website traffic. Cookies are small text files stored on your device.</p>
+          <h3>Types of cookies we may use</h3>
+          <ul>
+            <li><strong style="color:var(--white)">Essential cookies:</strong> Necessary for the Website to function correctly. Cannot be disabled.</li>
+            <li><strong style="color:var(--white)">Analytics cookies:</strong> Used to understand how visitors interact with the Website (e.g., page views, bounce rates). Data is aggregated and anonymous.</li>
+          </ul>
+          <p>We do not use advertising cookies, retargeting cookies, or cookies that track you across other websites. You can control cookie settings through your browser preferences at any time.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Changes to These Terms</h2>
+          <p>We reserve the right to update or modify these Terms at any time. When we do, we will revise the "Last updated" date at the top of this page. Your continued use of the Website after changes are posted constitutes your acceptance of the revised Terms. We encourage you to review these Terms periodically.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Governing Law</h2>
+          <p>These Terms shall be governed by and construed in accordance with the laws of the United States. Any disputes arising under these Terms shall be resolved in a court of competent jurisdiction in the state where Kodek Media is registered.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Contact Us</h2>
+          <p>If you have questions about these Terms or our practices, please contact us:</p>
+          <ul>
+            <li>Email: <a href="mailto:hello@kodekmedia.com">hello@kodekmedia.com</a></li>
+            <li>Website: <a href="index.html">kodekmedia.com</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <img src="logo-wordmark.png" alt="Kodek Media" class="footer-logo-img" />
+          <p class="footer-tagline">TikTok's premier brand empowerment agency. We turn content into commerce and creators into revenue engines.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.65a8.18 8.18 0 004.79 1.53v-3.4a4.85 4.85 0 01-1.02-.09z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="X / Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="index.html#services">Creator Management</a></li>
+              <li><a href="index.html#services">TikTok Shop</a></li>
+              <li><a href="index.html#services">Content Strategy</a></li>
+              <li><a href="index.html#services">Live Commerce</a></li>
+              <li><a href="index.html#services">Paid Amplification</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="index.html#about">About Us</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="apply-brand.html">Work With Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="mailto:hello@kodekmedia.com">hello@kodekmedia.com</a></li>
+              <li><a href="apply-brand.html">Brand &amp; Seller Inquiry</a></li>
+              <li><a href="apply-creator.html">LIVE Creator Program</a></li>
+              <li><a href="apply-affiliate.html">TikTok Shop Affiliate</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Kodek Media. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="terms-of-service.html#cookies">Cookie Policy</a>
+        </div>
+        <div class="tiktok-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.65a8.18 8.18 0 004.79 1.53v-3.4a4.85 4.85 0 01-1.02-.09z"/>
+          </svg>
+          TikTok-Focused Agency
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Kodek Media</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="logo-icon.png" />
+  <style>
+    /* ── Legal page layout ── */
+    .legal-hero {
+      padding: calc(var(--nav-h) + 72px) 0 64px;
+      border-bottom: 1px solid var(--glass-border);
+    }
+    .legal-hero .legal-label {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 18px;
+    }
+    .legal-hero h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 700;
+      color: var(--white);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .legal-meta {
+      font-size: 0.85rem;
+      color: var(--gray-light);
+    }
+    .legal-meta span {
+      color: var(--amber);
+      font-weight: 500;
+    }
+
+    /* ── Body content ── */
+    .legal-body {
+      padding: 80px 0 120px;
+    }
+    .legal-body .legal-inner {
+      max-width: 760px;
+    }
+    .legal-section {
+      margin-bottom: 56px;
+    }
+    .legal-section h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--white);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--glass-border);
+    }
+    .legal-section h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--white);
+      margin: 24px 0 8px;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+    .legal-section p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .legal-section ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 14px;
+    }
+    .legal-section ul li {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.75;
+      padding-left: 18px;
+      position: relative;
+      margin-bottom: 6px;
+    }
+    .legal-section ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--amber);
+      font-weight: 700;
+    }
+    .legal-section a {
+      color: var(--amber);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,143,0,0.3);
+      transition: border-color 0.2s;
+    }
+    .legal-section a:hover {
+      border-color: var(--amber);
+    }
+    .legal-callout {
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-left: 3px solid var(--amber);
+      border-radius: 8px;
+      padding: 18px 22px;
+      margin: 20px 0;
+    }
+    .legal-callout p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="logo-wordmark.png" alt="Kodek Media" class="logo-img logo-wordmark" />
+        <img src="logo-icon.png"     alt="Kodek Media" class="logo-img logo-icon-only" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="apply-brand.html" class="btn btn-primary nav-cta">Get Started</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════ MOBILE MENU ═══════════════════════ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="apply-brand.html" class="btn btn-primary" style="display:inline-flex;margin-top:8px">Get Started</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <div class="legal-hero">
+    <div class="container">
+      <span class="legal-label">Legal</span>
+      <h1>Privacy Policy</h1>
+      <p class="legal-meta">Last updated: <span>February 2025</span></p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ CONTENT ═══════════════════════ -->
+  <div class="legal-body">
+    <div class="container">
+      <div class="legal-inner">
+
+        <div class="legal-section">
+          <h2>Overview</h2>
+          <p>Kodek Media ("we," "us," or "our") is a TikTok brand empowerment agency. This Privacy Policy explains how we collect, use, and protect the personal information you provide when visiting our website or submitting an application through our forms.</p>
+          <p>By using our website or submitting an application, you agree to the practices described in this policy. If you do not agree, please do not use our website or submit your information.</p>
+          <div class="legal-callout">
+            <p>We do not sell, rent, or trade your personal information to any third party. Ever.</p>
+          </div>
+        </div>
+
+        <div class="legal-section">
+          <h2>Information We Collect</h2>
+          <h3>Information you provide directly</h3>
+          <p>When you complete one of our application forms (Brand &amp; Seller Inquiry, LIVE Creator Program, or TikTok Shop Affiliate), we may collect:</p>
+          <ul>
+            <li>Full name and contact information (email address, phone number)</li>
+            <li>Business or brand name and website URL</li>
+            <li>TikTok handle, profile URL, and account metrics (followers, views, GMV)</li>
+            <li>Content niche, product categories, and business details</li>
+            <li>Goals, challenges, and other information you choose to share in open-text fields</li>
+          </ul>
+          <h3>Information collected automatically</h3>
+          <p>When you visit our website, we may automatically collect standard technical data including:</p>
+          <ul>
+            <li>Browser type and version</li>
+            <li>Pages visited and time spent on our site</li>
+            <li>Referring URLs and general geographic region (country/city)</li>
+            <li>Device type (desktop, mobile)</li>
+          </ul>
+          <p>This data is collected through standard web analytics tools and is used in aggregate form only.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>How We Use Your Information</h2>
+          <p>We use the information you provide exclusively to:</p>
+          <ul>
+            <li>Review and respond to your application or inquiry</li>
+            <li>Contact you to discuss potential opportunities or next steps</li>
+            <li>Understand your needs so we can offer relevant services</li>
+            <li>Send you updates about Kodek Media programs (only where you have opted in)</li>
+            <li>Improve our website and application process</li>
+          </ul>
+          <p>We will never use your information for purposes unrelated to your application or relationship with Kodek Media without your explicit consent.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>How We Store and Protect Your Data</h2>
+          <p>Your information is stored securely and accessible only to authorized Kodek Media team members who need it to process your application. We use industry-standard security practices to protect your data from unauthorized access, disclosure, or loss.</p>
+          <p>We retain your application data for up to 24 months. If you would like your data deleted sooner, you may request this at any time (see "Your Rights" below).</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Sharing Your Information</h2>
+          <p>We do not sell or share your personal information with third parties except in the following limited circumstances:</p>
+          <ul>
+            <li><strong style="color:var(--white)">Service providers:</strong> We may use trusted tools (e.g., form processing, email services) that handle your data on our behalf, bound by confidentiality agreements.</li>
+            <li><strong style="color:var(--white)">Legal requirements:</strong> We may disclose information if required by law or to protect the rights and safety of Kodek Media or others.</li>
+          </ul>
+          <p>Any third-party tools we use are carefully vetted and contractually obligated to protect your data.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Cookies</h2>
+          <p>Our website may use cookies and similar tracking technologies for basic analytics (e.g., understanding which pages are most visited). These are non-advertising, non-tracking cookies.</p>
+          <p>You can control or disable cookies through your browser settings at any time. Disabling cookies will not affect your ability to view our website or submit an application.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Third-Party Links</h2>
+          <p>Our website may contain links to TikTok or other third-party platforms. This Privacy Policy applies only to the Kodek Media website. We are not responsible for the privacy practices of any third-party sites, and we encourage you to review their privacy policies separately.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Children's Privacy</h2>
+          <p>Our services are intended for individuals 18 years of age or older. We do not knowingly collect personal information from anyone under 18. If you believe a minor has submitted information through our website, please contact us immediately and we will delete it.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Your Rights</h2>
+          <p>You have the right to:</p>
+          <ul>
+            <li>Request a copy of the personal information we hold about you</li>
+            <li>Request that we correct inaccurate information</li>
+            <li>Request that we delete your information</li>
+            <li>Opt out of any marketing communications at any time</li>
+          </ul>
+          <p>To exercise any of these rights, contact us at <a href="mailto:hello@kodekmedia.com">hello@kodekmedia.com</a>. We will respond within 30 days.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Changes to This Policy</h2>
+          <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date at the top of this page. We encourage you to review this policy periodically. Continued use of our website after any changes constitutes your acceptance of the updated policy.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Contact Us</h2>
+          <p>If you have any questions or concerns about this Privacy Policy or how we handle your data, please reach out:</p>
+          <ul>
+            <li>Email: <a href="mailto:hello@kodekmedia.com">hello@kodekmedia.com</a></li>
+            <li>Website: <a href="index.html">kodekmedia.com</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <img src="logo-wordmark.png" alt="Kodek Media" class="footer-logo-img" />
+          <p class="footer-tagline">TikTok's premier brand empowerment agency. We turn content into commerce and creators into revenue engines.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.65a8.18 8.18 0 004.79 1.53v-3.4a4.85 4.85 0 01-1.02-.09z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="X / Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="index.html#services">Creator Management</a></li>
+              <li><a href="index.html#services">TikTok Shop</a></li>
+              <li><a href="index.html#services">Content Strategy</a></li>
+              <li><a href="index.html#services">Live Commerce</a></li>
+              <li><a href="index.html#services">Paid Amplification</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="index.html#about">About Us</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="apply-brand.html">Work With Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="mailto:hello@kodekmedia.com">hello@kodekmedia.com</a></li>
+              <li><a href="apply-brand.html">Brand &amp; Seller Inquiry</a></li>
+              <li><a href="apply-creator.html">LIVE Creator Program</a></li>
+              <li><a href="apply-affiliate.html">TikTok Shop Affiliate</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Kodek Media. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="terms-of-service.html#cookies">Cookie Policy</a>
+        </div>
+        <div class="tiktok-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.65a8.18 8.18 0 004.79 1.53v-3.4a4.85 4.85 0 01-1.02-.09z"/>
+          </svg>
+          TikTok-Focused Agency
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

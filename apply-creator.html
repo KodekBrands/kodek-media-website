@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIVE Creator Application — Kodek Media</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="forms.css" />
+  <link rel="icon" type="image/png" href="logo-icon.png" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="logo-wordmark.png" alt="Kodek Media" class="logo-img logo-wordmark" />
+        <img src="logo-icon.png"     alt="Kodek Media" class="logo-img logo-icon-only" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="apply-creator.html" class="btn btn-primary nav-cta">Apply Now</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="form-hero">
+    <div class="form-hero-glow"></div>
+    <div class="form-hero-grid"></div>
+    <div class="form-hero-inner">
+      <a href="index.html" class="form-back">← Back to Home</a>
+      <span class="section-label">LIVE Creator Program</span>
+      <h1 class="form-title">Go LIVE with<br /><span class="text-gradient">Confidence &amp; Protection.</span></h1>
+      <p class="form-subtitle">Join Kodek Media's exclusive LIVE creator program — expert training, account protection, and a team behind you every time you go live.</p>
+      <div class="form-meta">
+        <div class="form-meta-item"><span class="form-meta-dot"></span> Account protection</div>
+        <div class="form-meta-item"><span class="form-meta-dot"></span> 1-on-1 LIVE coaching</div>
+        <div class="form-meta-item"><span class="form-meta-dot"></span> Ongoing training &amp; support</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section class="form-section">
+    <div class="form-card">
+
+      <form id="creatorForm" novalidate>
+
+        <!-- ─── Contact Info ──────────────────────── -->
+        <div class="form-section-title">Personal Information</div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="firstName">First Name <span class="required">*</span></label>
+            <input class="form-input" type="text" id="firstName" name="firstName" placeholder="Jane" required />
+            <span class="form-error-msg">Please enter your first name.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="lastName">Last Name <span class="required">*</span></label>
+            <input class="form-input" type="text" id="lastName" name="lastName" placeholder="Smith" required />
+            <span class="form-error-msg">Please enter your last name.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="you@email.com" />
+            <span class="form-error-msg">Please enter a valid email.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone Number</label>
+            <input class="form-input" type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+            <span class="form-error-msg">Please enter your phone number.</span>
+          </div>
+        </div>
+
+        <!-- ─── TikTok Profile ────────────────────── -->
+        <div class="form-section-title">TikTok Profile</div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="tiktokHandle">TikTok Handle <span class="required">*</span></label>
+            <input class="form-input" type="text" id="tiktokHandle" name="tiktokHandle" placeholder="@yourhandle" required />
+            <span class="form-error-msg">Please enter your TikTok handle.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="tiktokProfile">TikTok Profile URL</label>
+            <input class="form-input" type="url" id="tiktokProfile" name="tiktokProfile" placeholder="https://www.tiktok.com/@..." />
+            <span class="form-error-msg">Please enter your TikTok profile URL.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="followers">Follower Count <span class="required">*</span></label>
+            <div class="form-select-wrap">
+              <select class="form-select" id="followers" name="followers" required>
+                <option value="" disabled selected>Select range…</option>
+                <option>Under 1,000</option>
+                <option>1,000 – 5,000</option>
+                <option>5,000 – 10,000</option>
+                <option>10,000 – 50,000</option>
+                <option>50,000 – 100,000</option>
+                <option>100,000+</option>
+              </select>
+            </div>
+            <span class="form-error-msg">Please select your follower count.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contentNiche">Content Niche <span class="required">*</span></label>
+            <div class="form-select-wrap">
+              <select class="form-select" id="contentNiche" name="contentNiche" required>
+                <option value="" disabled selected>Select your niche…</option>
+                <option>Beauty &amp; Skincare</option>
+                <option>Fashion &amp; Style</option>
+                <option>Health &amp; Wellness</option>
+                <option>Fitness &amp; Sport</option>
+                <option>Food &amp; Cooking</option>
+                <option>Lifestyle &amp; Vlogs</option>
+                <option>Tech &amp; Gadgets</option>
+                <option>Gaming</option>
+                <option>Finance &amp; Business</option>
+                <option>Parenting &amp; Family</option>
+                <option>Comedy &amp; Entertainment</option>
+                <option>Music &amp; Performance</option>
+                <option>Education &amp; Tutorials</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <span class="form-error-msg">Please select your content niche.</span>
+          </div>
+        </div>
+
+        <!-- ─── LIVE Experience ───────────────────── -->
+        <div class="form-section-title">TikTok LIVE Experience</div>
+
+        <div class="form-group">
+          <label class="form-label">How Often Do You Currently Go LIVE? <span class="required">*</span></label>
+          <div class="form-radio-group">
+            <label class="form-radio-label"><input type="radio" name="liveFrequency" value="daily" required /> Daily</label>
+            <label class="form-radio-label"><input type="radio" name="liveFrequency" value="few-week" /> A few times a week</label>
+            <label class="form-radio-label"><input type="radio" name="liveFrequency" value="weekly" /> Once a week</label>
+            <label class="form-radio-label"><input type="radio" name="liveFrequency" value="rarely" /> Rarely</label>
+            <label class="form-radio-label"><input type="radio" name="liveFrequency" value="never" /> Never gone LIVE yet</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="avgLiveViewers">Average LIVE Viewers</label>
+            <div class="form-select-wrap">
+              <select class="form-select" id="avgLiveViewers" name="avgLiveViewers">
+                <option value="" disabled selected>Select…</option>
+                <option>N/A — haven't gone LIVE</option>
+                <option>Under 50</option>
+                <option>50 – 200</option>
+                <option>200 – 1,000</option>
+                <option>1,000 – 5,000</option>
+                <option>5,000+</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="avgLiveDuration">Typical LIVE Stream Duration</label>
+            <div class="form-select-wrap">
+              <select class="form-select" id="avgLiveDuration" name="avgLiveDuration">
+                <option value="" disabled selected>Select…</option>
+                <option>N/A — haven't gone LIVE</option>
+                <option>Under 30 minutes</option>
+                <option>30 – 60 minutes</option>
+                <option>1 – 2 hours</option>
+                <option>2 – 4 hours</option>
+                <option>4+ hours</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Have You Ever Received a TikTok LIVE Restriction or Ban? <span class="required">*</span></label>
+          <div class="form-radio-group">
+            <label class="form-radio-label"><input type="radio" name="hasBan" value="yes-current" required /> Yes — currently restricted</label>
+            <label class="form-radio-label"><input type="radio" name="hasBan" value="yes-past" /> Yes — in the past, resolved</label>
+            <label class="form-radio-label"><input type="radio" name="hasBan" value="no" /> No, never</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="currentChallenges">What Are Your Biggest Challenges Going LIVE Right Now? <span class="required">*</span></label>
+          <div class="form-check-group">
+            <label class="form-check-label"><input type="checkbox" name="challenges" value="bans" /> Account bans / restrictions</label>
+            <label class="form-check-label"><input type="checkbox" name="challenges" value="viewers" /> Growing my LIVE viewership</label>
+            <label class="form-check-label"><input type="checkbox" name="challenges" value="engagement" /> Keeping viewers engaged</label>
+            <label class="form-check-label"><input type="checkbox" name="challenges" value="content" /> Knowing what to say / content structure</label>
+            <label class="form-check-label"><input type="checkbox" name="challenges" value="consistency" /> Going LIVE consistently</label>
+            <label class="form-check-label"><input type="checkbox" name="challenges" value="algorithm" /> Understanding the LIVE algorithm</label>
+            <label class="form-check-label"><input type="checkbox" name="challenges" value="monetization" /> Monetizing my LIVE streams</label>
+          </div>
+        </div>
+
+        <!-- ─── Training Goals ────────────────────── -->
+        <div class="form-section-title">Training &amp; Goals</div>
+
+        <div class="form-group">
+          <label class="form-label">What Do You Hope to Get From the Kodek LIVE Program? <span class="required">*</span></label>
+          <div class="form-check-group">
+            <label class="form-check-label"><input type="checkbox" name="goals" value="protection" /> Account protection &amp; appeal support</label>
+            <label class="form-check-label"><input type="checkbox" name="goals" value="coaching" /> 1-on-1 LIVE coaching sessions</label>
+            <label class="form-check-label"><input type="checkbox" name="goals" value="strategy" /> LIVE strategy &amp; content planning</label>
+            <label class="form-check-label"><input type="checkbox" name="goals" value="growth" /> Growing my audience &amp; viewership</label>
+            <label class="form-check-label"><input type="checkbox" name="goals" value="community" /> Access to a creator community</label>
+            <label class="form-check-label"><input type="checkbox" name="goals" value="monetization" /> Maximizing LIVE gifts &amp; revenue</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="experience">Tell Us About Your LIVE Experience &amp; What You're Looking For <span class="required">*</span></label>
+          <textarea class="form-textarea" id="experience" name="experience" placeholder="Share your TikTok LIVE journey so far — what's working, what's not, any bans or restrictions you've faced, and what you're hoping the Kodek program will help you achieve…" required></textarea>
+          <span class="form-error-msg">Please tell us about your experience and goals.</span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="sampleLive">Link to a Recent LIVE or Video</label>
+          <input class="form-input" type="url" id="sampleLive" name="sampleLive" placeholder="https://www.tiktok.com/..." />
+        </div>
+
+        <button type="submit" class="form-submit" id="submitBtn">
+          Submit LIVE Creator Application →
+        </button>
+
+      </form>
+
+      <!-- Success -->
+      <div class="form-success" id="formSuccess">
+        <div class="success-icon">✓</div>
+        <h3 class="success-title">Application Submitted!</h3>
+        <p class="success-desc">You're on your way to going LIVE with real support behind you. Our team reviews applications weekly and will be in touch within 5–7 business days.</p>
+        <a href="index.html" class="btn btn-primary btn-large">Back to Home</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SLIM FOOTER -->
+  <footer class="form-footer">
+    <img src="logo-wordmark.png" alt="Kodek Media" class="form-footer-logo" />
+    <span class="form-footer-copy">© 2025 Kodek Media. All rights reserved.</span>
+    <a href="index.html" class="form-footer-link">Privacy Policy</a>
+  </footer>
+
+  <script src="scripts/form-handler.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

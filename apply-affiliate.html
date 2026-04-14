@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TikTok Shop Affiliate Application — Kodek Media</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="forms.css" />
+  <link rel="icon" type="image/png" href="logo-icon.png" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="logo-wordmark.png" alt="Kodek Media" class="logo-img logo-wordmark" />
+        <img src="logo-icon.png"     alt="Kodek Media" class="logo-img logo-icon-only" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="apply-affiliate.html" class="btn btn-primary nav-cta">Apply Now</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="form-hero">
+    <div class="form-hero-glow"></div>
+    <div class="form-hero-grid"></div>
+    <div class="form-hero-inner">
+      <a href="index.html" class="form-back">← Back to Home</a>
+      <span class="section-label">TikTok Shop Affiliate</span>
+      <h1 class="form-title">Turn Your Content<br /><span class="text-gradient">Into Commission.</span></h1>
+      <p class="form-subtitle">Apply to Kodek Media's TikTok Shop affiliate program and get matched with high-converting products from top brands — earning commission on every sale.</p>
+      <div class="form-meta">
+        <div class="form-meta-item"><span class="form-meta-dot"></span> Premium product access</div>
+        <div class="form-meta-item"><span class="form-meta-dot"></span> Higher commission rates</div>
+        <div class="form-meta-item"><span class="form-meta-dot"></span> Dedicated affiliate manager</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section class="form-section">
+    <div class="form-card">
+
+      <form id="affiliateForm" novalidate>
+
+        <div class="form-section-title">Personal Information</div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="firstName">First Name <span class="required">*</span></label>
+            <input class="form-input" type="text" id="firstName" name="firstName" placeholder="Jane" required />
+            <span class="form-error-msg">Please enter your first name.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="lastName">Last Name <span class="required">*</span></label>
+            <input class="form-input" type="text" id="lastName" name="lastName" placeholder="Smith" required />
+            <span class="form-error-msg">Please enter your last name.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="you@email.com" />
+            <span class="form-error-msg">Please enter a valid email.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone Number</label>
+            <input class="form-input" type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+          </div>
+        </div>
+
+        <div class="form-section-title">TikTok Profile</div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="tiktokHandle">TikTok Handle <span class="required">*</span></label>
+            <input class="form-input" type="text" id="tiktokHandle" name="tiktokHandle" placeholder="@yourhandle" required />
+            <span class="form-error-msg">Please enter your TikTok handle.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="tiktokProfile">TikTok Profile URL</label>
+            <input class="form-input" type="url" id="tiktokProfile" name="tiktokProfile" placeholder="https://www.tiktok.com/@..." />
+            <span class="form-error-msg">Please enter your TikTok profile URL.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="followers">Follower Count <span class="required">*</span></label>
+            <div class="form-select-wrap">
+              <select class="form-select" id="followers" name="followers" required>
+                <option value="" disabled selected>Select range…</option>
+                <option>Under 5,000</option>
+                <option>5,000 – 10,000</option>
+                <option>10,000 – 50,000</option>
+                <option>50,000 – 100,000</option>
+                <option>100,000 – 500,000</option>
+                <option>500,000+</option>
+              </select>
+            </div>
+            <span class="form-error-msg">Please select your follower count.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="avgViews">Average Video Views <span class="required">*</span></label>
+            <div class="form-select-wrap">
+              <select class="form-select" id="avgViews" name="avgViews" required>
+                <option value="" disabled selected>Select range…</option>
+                <option>Under 10,000</option>
+                <option>10,000 – 50,000</option>
+                <option>50,000 – 200,000</option>
+                <option>200,000 – 1M</option>
+                <option>1M – 5M</option>
+                <option>5M+</option>
+              </select>
+            </div>
+            <span class="form-error-msg">Please select your average views.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="niche">Primary Niche <span class="required">*</span></label>
+            <div class="form-select-wrap">
+              <select class="form-select" id="niche" name="niche" required>
+                <option value="" disabled selected>Select your niche…</option>
+                <option>Beauty &amp; Skincare</option>
+                <option>Fashion &amp; Style</option>
+                <option>Health &amp; Wellness</option>
+                <option>Fitness &amp; Sport</option>
+                <option>Food &amp; Cooking</option>
+                <option>Lifestyle &amp; Vlogs</option>
+                <option>Tech &amp; Gadgets</option>
+                <option>Gaming</option>
+                <option>Finance &amp; Business</option>
+                <option>Parenting &amp; Family</option>
+                <option>Travel</option>
+                <option>Comedy &amp; Entertainment</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <span class="form-error-msg">Please select your niche.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="country">Country / Region <span class="required">*</span></label>
+            <div class="form-select-wrap">
+              <select class="form-select" id="country" name="country" required>
+                <option value="" disabled selected>Select…</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>Canada</option>
+                <option>Australia</option>
+                <option>Germany</option>
+                <option>France</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <span class="form-error-msg">Please select your country.</span>
+          </div>
+        </div>
+
+        <div class="form-section-title">TikTok Shop Experience</div>
+
+        <div class="form-group">
+          <label class="form-label">Do You Have an Active TikTok Shop Affiliate Account? <span class="required">*</span></label>
+          <div class="form-radio-group">
+            <label class="form-radio-label"><input type="radio" name="hasShop" value="yes" required /> Yes, active</label>
+            <label class="form-radio-label"><input type="radio" name="hasShop" value="pending" /> Applied, pending approval</label>
+            <label class="form-radio-label"><input type="radio" name="hasShop" value="no" /> No, not yet</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="currentGmv">Current Monthly Affiliate GMV</label>
+            <div class="form-select-wrap">
+              <select class="form-select" id="currentGmv" name="currentGmv">
+                <option value="" disabled selected>Select…</option>
+                <option>N/A — no shop yet</option>
+                <option>Under $1,000</option>
+                <option>$1,000 – $5,000</option>
+                <option>$5,000 – $20,000</option>
+                <option>$20,000 – $50,000</option>
+                <option>$50,000 – $100,000</option>
+                <option>$100,000+</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="videosSample">Best-Performing Video URL</label>
+            <input class="form-input" type="url" id="videosSample" name="videosSample" placeholder="https://www.tiktok.com/..." />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Product Categories You Want to Promote <span class="required">*</span></label>
+          <div class="form-check-group">
+            <label class="form-check-label"><input type="checkbox" name="categories" value="Beauty" /> Beauty &amp; Skincare</label>
+            <label class="form-check-label"><input type="checkbox" name="categories" value="Fashion" /> Fashion &amp; Apparel</label>
+            <label class="form-check-label"><input type="checkbox" name="categories" value="Health" /> Health &amp; Supplements</label>
+            <label class="form-check-label"><input type="checkbox" name="categories" value="Food" /> Food &amp; Beverage</label>
+            <label class="form-check-label"><input type="checkbox" name="categories" value="Fitness" /> Fitness &amp; Sports</label>
+            <label class="form-check-label"><input type="checkbox" name="categories" value="Home" /> Home &amp; Living</label>
+            <label class="form-check-label"><input type="checkbox" name="categories" value="Tech" /> Tech &amp; Electronics</label>
+            <label class="form-check-label"><input type="checkbox" name="categories" value="Baby" /> Baby &amp; Kids</label>
+            <label class="form-check-label"><input type="checkbox" name="categories" value="Pets" /> Pets</label>
+            <label class="form-check-label"><input type="checkbox" name="categories" value="Any" /> Open to any category</label>
+          </div>
+        </div>
+
+        <div class="form-section-title">About You</div>
+
+        <div class="form-group">
+          <label class="form-label" for="prevCollab">Previous Brand Collaborations (Optional)</label>
+          <textarea class="form-textarea" id="prevCollab" name="prevCollab" placeholder="List any notable brands you've worked with or products you've promoted on TikTok Shop…" style="min-height:90px"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="whyJoin">Why Do You Want to Join the Kodek Affiliate Program? <span class="required">*</span></label>
+          <textarea class="form-textarea" id="whyJoin" name="whyJoin" placeholder="Tell us about your content style, your audience demographics, your engagement rate, and why you'd be a great affiliate partner…" required></textarea>
+          <span class="form-error-msg">Please tell us why you want to join.</span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="heardFrom">How Did You Hear About Kodek Media?</label>
+          <div class="form-select-wrap">
+            <select class="form-select" id="heardFrom" name="heardFrom">
+              <option value="" disabled selected>Select…</option>
+              <option>TikTok</option>
+              <option>Instagram</option>
+              <option>Google Search</option>
+              <option>Referral from a creator</option>
+              <option>Referral from a brand</option>
+              <option>LinkedIn</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="form-submit" id="submitBtn">
+          Submit Affiliate Application →
+        </button>
+
+      </form>
+
+      <!-- Success -->
+      <div class="form-success" id="formSuccess">
+        <div class="success-icon">✓</div>
+        <h3 class="success-title">Application Received!</h3>
+        <p class="success-desc">Thanks for applying to the Kodek affiliate program. Our team reviews applications weekly and will reach out within 3–5 business days with next steps.</p>
+        <a href="index.html" class="btn btn-primary btn-large">Back to Home</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SLIM FOOTER -->
+  <footer class="form-footer">
+    <img src="logo-wordmark.png" alt="Kodek Media" class="form-footer-logo" />
+    <span class="form-footer-copy">© 2025 Kodek Media. All rights reserved.</span>
+    <a href="index.html" class="form-footer-link">Privacy Policy</a>
+  </footer>
+
+  <script src="scripts/form-handler.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
