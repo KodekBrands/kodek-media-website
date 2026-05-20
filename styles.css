@@ -193,12 +193,45 @@ h1, h2, h3, .logo, .footer-logo {
   letter-spacing: 0.02em;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--white);
 }
 
 .nav-cta {
   flex-shrink: 0;
+}
+
+/* === THEME TOGGLE === */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-right: 16px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.25s var(--ease-out);
+  flex-shrink: 0;
+  padding: 0;
+}
+.theme-toggle:hover {
+  border-color: var(--amber);
+  color: var(--amber);
+}
+.theme-toggle svg { display: block; }
+.theme-toggle .icon-sun  { display: block; }
+.theme-toggle .icon-moon { display: none; }
+
+@media (max-width: 768px) {
+  .theme-toggle {
+    margin-right: auto;
+    margin-left: 0;
+  }
 }
 
 .menu-toggle {

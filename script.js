@@ -64,9 +64,7 @@
         if (entry.isIntersecting) {
           const id = entry.target.getAttribute('id');
           navLinks.forEach(link => {
-            link.style.color = link.getAttribute('href') === `#${id}`
-              ? 'rgba(255,255,255,0.95)'
-              : '';
+            link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
           });
         }
       });
